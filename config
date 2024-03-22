@@ -10,9 +10,20 @@
 
     "modules-left": ["tray", "idle_inhibitor", "cpu", "temperature", "network"],
     "modules-center": ["battery", "battery#bat2", "clock", "memory"],
-    "modules-right": ["backlight", "pulseaudio", "river/tags"],
+    "modules-right": ["backlight", "pulseaudio", "sway/workspaces"],
 
     // Modules configuration
+
+    "sway/workspaces": {
+        "format": "{name}",
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+        }
+    },
 
     "river/tags": {
         "num-tags": 5,

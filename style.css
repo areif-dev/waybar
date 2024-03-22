@@ -21,7 +21,7 @@ window#waybar.hidden {
 }
 
 #workspaces button {
-  background: #1f1f1f;
+  background-color: #313244;
   color: #ffffff;
   border-radius: 20px;
 }
@@ -34,7 +34,8 @@ window#waybar.hidden {
 }
 
 #workspaces button.focused {
-  background: #1f1f1f;
+  color: black;
+  background-color: #f5e0dc;
 }
 
 #workspaces button.focused:hover {
@@ -69,12 +70,13 @@ window#waybar.hidden {
 #custom-snip,
 #custom-wallpaper,
 #tags,
+#workspaces button,
 #taskbar,
 #tray,
 #mode,
 #idle_inhibitor,
 #mpd {
-  padding: 2px 10px 0px 10px;
+  padding: 4px 15px 2px 15px;
   color: #ffffff;
   border-radius: 20px;
   border: 1px solid #181825;
