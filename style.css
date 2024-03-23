@@ -28,24 +28,23 @@ window#waybar.hidden {
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button:hover {
-  background: lightblue;
-  color: black;
-  border-bottom: 3px solid #ffffff;
+  background: #313244;
+  border: 1px solid #89b4fa;
 }
 
 #workspaces button.focused {
   color: black;
-  background-color: #f5e0dc;
+  background: #f5e0dc;
 }
 
 #workspaces button.focused:hover {
-  background: lightblue;
   color: black;
-  border-bottom: 3px solid #ffffff;
+  background: #f5e0dc;
+  border-color: #89b4fa;
 }
 
 #workspaces button.urgent {
-  background-color: #eb4d4b;
+  background-color: #f38ba8;
 }
 
 #mode {
