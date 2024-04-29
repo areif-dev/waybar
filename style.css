@@ -21,30 +21,63 @@ window#waybar.hidden {
 }
 
 #workspaces button {
-  background: #1f1f1f;
+  background-color: #313244;
   color: #ffffff;
   border-radius: 20px;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button:hover {
-  background: lightblue;
-  color: black;
-  border-bottom: 3px solid #ffffff;
+  background: #313244;
+  border: 1px solid #89b4fa;
 }
 
 #workspaces button.focused {
-  background: #1f1f1f;
+  color: black;
+  background: #f5e0dc;
 }
 
 #workspaces button.focused:hover {
-  background: lightblue;
   color: black;
-  border-bottom: 3px solid #ffffff;
+  background: #f5e0dc;
+  border-color: #89b4fa;
 }
 
 #workspaces button.urgent {
-  background-color: #eb4d4b;
+  background-color: #f38ba8;
+}
+
+#tags button {
+  background-color: #313244;
+  color: #ffffff;
+  border-radius: 20px;
+}
+
+#tags button.occupied {
+  color: #94e2d5;
+  background-color: #1e1e2e;
+  border-color: #94e2d5;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#tags button:hover {
+  background: #313244;
+  border: 1px solid #89b4fa;
+}
+
+#tags button.focused {
+  color: black;
+  background: #f5e0dc;
+}
+
+#tags button.focused:hover {
+  color: black;
+  background: #f5e0dc;
+  border-color: #89b4fa;
+}
+
+#tags button.urgent {
+  background-color: #f38ba8;
 }
 
 #mode {
@@ -68,13 +101,14 @@ window#waybar.hidden {
 #custom-updater,
 #custom-snip,
 #custom-wallpaper,
-#tags,
+#workspaces button,
+#tags button,
 #taskbar,
 #tray,
 #mode,
 #idle_inhibitor,
 #mpd {
-  padding: 2px 10px 0px 10px;
+  padding: 4px 15px 2px 15px;
   color: #ffffff;
   border-radius: 20px;
   border: 1px solid #181825;
@@ -207,32 +241,6 @@ label:focus {
   background-color: #171717;
   color: pink;
   font-size: 20px;
-}
-
-#tags {
-  background-color: #313244;
-  font-size: 20px;
-}
-
-#tags button {
-  border-radius: 20px;
-  padding: 0px;
-}
-
-#tags button.occupied {
-  color: #94e2d5;
-  margin: 5px;
-  background-color: #1e1e2e;
-}
-#tags button.focused {
-  color: black;
-  margin: 5px;
-  background-color: #f5e0dc;
-}
-#tags button.urgent {
-  color: red;
-  margin: 5px;
-  background-color: #f5e0dc;
 }
 
 #taskbar {
